@@ -3,8 +3,9 @@ description: "The LeoDT Parser is a Dart package designed for parsing and interp
 specified in the LeoDT format. It provides a robust solution for applications requiring
 decision-making capabilities, particularly useful in domains like medical diagnosis, troubleshooting
 systems, or any scenario where a series of decisions leads to a conclusive result."
-version: 0.0.1
+version: 0.0.2
 homepage: https://walnut-it.com
+repository: https://github.com/WalnutIT/LeoDT-Parser
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
