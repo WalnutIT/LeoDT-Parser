@@ -16,3 +16,7 @@
 ## 0.0.4
 
 * Removed Flutter related dependencies. 
+
+## 0.0.5
+
+* Updated README.md. 
