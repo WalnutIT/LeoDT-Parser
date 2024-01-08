@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="0" skipped="0" name="D:.LeoDT Parser.leodt_parser.test.leodt_parser" timestamp="2024-01-08T13:44:50">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="12" skipped="0" name="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" timestamp="2024-01-08T13:44:50">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="1 Initializing Decision Tree with Data" time="0.066">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 1  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m DecisionTree Initialization
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Initializing Decision Tree with Data
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m Properly formatted decision tree data is provided
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m initialize method is called with this data
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The decision tree should be correctly initialized with nodes and options
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 1 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="2 Adding Node to History" time="0.006">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 2  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node History Management
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Adding Node to History
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree is initialized
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m A node is added to the tree's history
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The tree's history should include the added node
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 2 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="3 Clearing Node History" time="0.006">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 3  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node History Management
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Clearing Node History
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with a history of visited nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m clearHistory method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The history of visited nodes should be empty
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 3 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="4 Retrieving a Node by ID" time="0.008">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 4  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node Retrieval Functionality
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Retrieving a Node by ID
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with nodes is initialized
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m getNode method is called with a specific node ID
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The corresponding node should be returned, or a default LeafNode if not found
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 4 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="5 Restarting the Decision Tree" time="0.007">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 5  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Decision Tree Functionality
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Restarting the Decision Tree
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with a history of visited nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m restart method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The tree should be restarted from the root node, and history also contains only the root node
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 5 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="6 Clearing Entire Tree Structure" time="0.008">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 6  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Tree Structure Management
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Clearing Entire Tree Structure
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with nodes and history
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m clearTree method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m All nodes, root nodes, and history should be cleared, resetting the tree
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 6 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="7 Checking if Node History is Empty" time="0.007">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 7  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node History Status Check
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Checking if Node History is Empty
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree is initialized
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m isHistoryEmpty method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m It should return true if no nodes have been visited, false otherwise
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 7 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="8 Getting the Length of Node History" time="0.008">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 8  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node History Length Check
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Getting the Length of Node History
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with a history of visited nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m getHistoryLength method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m It should return the number of nodes traversed in the decision tree
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 8 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="9 Getting the Total Number of Nodes in the Tree" time="0.005">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 9  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node Count Check
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Getting the Total Number of Nodes in the Tree
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with a collection of nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m getNodesLength method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m It should return the total count of nodes stored in the collection
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 9 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="10 Removing Last Node from History" time="0.005">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 10  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Node History Management
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Removing Last Node from History
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with a history of visited nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m removeLastNodeFromHistory method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The most recent node should be removed from the history
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 10 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="11 Navigating Backward in the Decision Tree" time="0.006">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 11  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Tree Navigation
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Navigating Backward in the Decision Tree
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with a history of visited nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m goBack method is called
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The tree should navigate to the previous node and return it, or return null if there is no previous node
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 11 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.leodt_parser_base" name="12 Navigating Forward to a Specific Node" time="0.005">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 12  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Tree Navigation
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Navigating Forward to a Specific Node
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A decision tree with interconnected nodes
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m goForward method is called with a specific node ID
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The tree should navigate to the specified node and return it
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 12 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="D:.LeoDT Parser.leodt_parser.test.src.nodes.internal_node" timestamp="2024-01-08T13:44:50">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.nodes.internal_node" name="1 Creating and Validating an InternalNode Object" time="0.044">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 1  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m InternalNode Class Functionality
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Creating and Validating an InternalNode Object
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m Unique identifier, decision, options, hint, and information for an internal node are provided
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m An InternalNode object is created with these attributes
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The InternalNode object should have the correct identifier, decision, options, hint, and information
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 1 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="D:.LeoDT Parser.leodt_parser.test.src.nodes.leaf_node" timestamp="2024-01-08T13:44:50">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.nodes.leaf_node" name="1 Creating and Validating a LeafNode Object" time="0.035">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 1  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m LeafNode Class Functionality
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Creating and Validating a LeafNode Object
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A unique identifier and a result for a leaf node are provided
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m A LeafNode object is created with these attributes
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The LeafNode object should have the correct identifier and associated result
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 1 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="D:.LeoDT Parser.leodt_parser.test.src.nodes.option" timestamp="2024-01-08T13:44:50">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.nodes.option" name="1 Creating and Validating an Option Object" time="0.029">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 1  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m Option Class Functionality
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Creating and Validating an Option Object
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m An Id, a decision condition, and a target node Id are provided
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m An Option object is created with these parameters
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The Option object should have the correct Id, decision condition, and target node Id
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 1 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="D:.LeoDT Parser.leodt_parser.test.src.nodes.root_node" timestamp="2024-01-08T13:44:50">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.LeoDT Parser.leodt_parser.test.src.nodes.root_node" name="1 Creating and Validating a RootNode Object" time="0.029">
+      <system-out>&#x1B;[38;5;226m&#x1B;[3mTEST 1  &#x1B;[23m══════════════════════════════════════════════════&#x1B;[0m
+
+&#x1B;[38;5;45m&#x1B;[1m&#x1B;[3mFeature:&#x1B;[22m&#x1B;[23m RootNode Class Functionality
+
+  &#x1B;[1m&#x1B;[3mScenario:&#x1B;[22m&#x1B;[23m Creating and Validating a RootNode Object
+
+    &#x1B;[1m&#x1B;[3mGiven&#x1B;[22m&#x1B;[23m A unique identifier, a decision, and options for a root node are provided
+
+    &#x1B;[1m&#x1B;[3mWhen&#x1B;[22m&#x1B;[23m A RootNode object is created with these attributes
+
+    &#x1B;[1m&#x1B;[3mThen&#x1B;[22m&#x1B;[23m The RootNode object should have the correct identifier, decision, and options
+&#x1B;[22m
+&#x1B;[38;5;246m
+✔ &#x1B;[3mTEST 1 PASSED!
+
+&#x1B;[23m</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
