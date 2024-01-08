@@ -5,3 +5,10 @@
 * Support for root and leaf nodes, including decision criteria and options.
 
 ## 0.0.2
+
+* Added Github repository
+* Updated description
+
+## 0.0.3
+
+* Updated Changelog
