@@ -1,16 +1,11 @@
 name: leodt_parser
 description: "A Dart package for interpreting decision trees in LeoDT format, ideal for each use case where the user has to do manual decisions."
-version: 0.0.3
+version: 0.0.4
 homepage: https://walnut-it.com
 repository: https://github.com/WalnutIT/LeoDT-Parser
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
-  flutter: ">=1.17.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
 
 dev_dependencies:
   bdd_framework: ^3.0.1

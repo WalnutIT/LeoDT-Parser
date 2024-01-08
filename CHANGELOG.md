@@ -6,9 +6,13 @@
 
 ## 0.0.2
 
-* Added Github repository
-* Updated description
+* Added Github repository.
+* Updated description.
 
 ## 0.0.3
 
-* Updated Changelog
+* Updated Changelog.
+
+## 0.0.4
+
+* Removed Flutter related dependencies. 
