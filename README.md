@@ -134,11 +134,11 @@ Within each option:
 
 ## Getting started
 
-To start using the LEODT Parser, add it as a dependency to your Dart or Flutter project:
+To start using the LeoDT Parser, add it as a dependency to your Dart or Flutter project:
 
 ```yaml
 dependencies:
-  leodt_parser: ^1.0.0
+  leodt_parser: ^current version
 ```
 
 ## Usage
